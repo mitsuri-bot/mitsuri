@@ -3,11 +3,11 @@ import chalk from 'chalk'
 import { fileURLToPath } from 'url'
 
 global.owner = [
-  ['201559321760', '201020639057', true],
+  ['201020639057', '201020639057', true],
 ] //Number of owners
 
-global.mods = ['201559321760','201020639057'] 
-global.prems = ['201559321760','201020639057']
+global.mods = ['201020639057','201020639057'] 
+global.prems = ['201020639057','201020639057']
 
 
 global.APIs = { // API Prefix
@@ -23,7 +23,7 @@ global.ownername = 'Akira'
 global.botname = 'ميتسوري بــوت'
 global.premium = 'false'
 global.packname = 'ميتسوري بــوت'
-global.author = '201559321760 >> اكـــيــــرا'
+global.author = '201020639057 >> اكـــيــــرا'
 
 
 global.wait = '*[■■■■■■■■■□] 90%*'

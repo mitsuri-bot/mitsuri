@@ -5,7 +5,7 @@ let fkontak = { "key": { "participants":"0@s.whatsapp.net", "remoteJid": "status
   let user = db.data.users[m.sender]
   let name2 = conn.getName(m.sender)
   if (user.registered === true) throw `🙌مرحباً ، أنت مسجل بالفعل\n\n✳️تريد العودة إلى التسجيل?\n\استخدم الأمر لإزالة السجل \n*${usedPrefix}.تسجيل-خروج الرقم السري*\nإذا كنت لا تتذكر الرقم التسلسلي الخاص بك ، فاستخدم\n${usedPrefix}رمزي`
-  if (!Reg.test(text)) throw `${mg}✳️ استخدم الامر: *${usedPrefix + command} الاسم.العمر*\n📌مثال : *${usedPrefix + command}* ${name2}.16`
+  if (!Reg.test(text)) throw `✳️ استخدم الامر: *${usedPrefix + command} الاسم.العمر*\n📌مثال : *${usedPrefix + command}* ${name2}.16`
   let [_, name, splitter, age] = text.match(Reg)
   if (!name) throw '*ادخل الاسم*'
   if (!age) throw '*ادخل العمر*'

@@ -4,7 +4,13 @@ let handler = async function (m, { conn, text, usedPrefix, command }) {
 let fkontak = { "key": { "participants":"0@s.whatsapp.net", "remoteJid": "status@broadcast", "fromMe": false, "id": "Halo" }, "message": { "contactMessage": { "vcard": `BEGIN:VCARD\nVERSION:3.0\nN:Sy;Bot;;;\nFN:y\nitem1.TEL;waid=${m.sender.split('@')[0]}:${m.sender.split('@')[0]}\nitem1.X-ABLabel:Ponsel\nEND:VCARD` }}, "participant": "0@s.whatsapp.net" }
   let user = db.data.users[m.sender]
   let name2 = conn.getName(m.sender)
-  if (user.registered === true) throw `🙌مرحباً ، أنت مسجل بالفعل\n\n✳️تريد العودة إلى التسجيل?\n\استخدم الأمر لإزالة السجل \n*${usedPrefix}.تسجيل-خروج الرقم السري*\nإذا كنت لا تتذكر الرقم التسلسلي الخاص بك ، فاستخدم\n${usedPrefix}رمزي`
+  if (user.registered === true) throw `
+> *⏎┇ انت مسجل بالفعل『 ✓ 』*
+
+> *⌫┇ اذا كنت تريد تسجيل الخروج استخدم الأمر لإزالة السجل ☟*
+> *.تسجيل_خروج (الرقم السري)*
+> *إذا كنت لا تتذكر الرقم التسلسلي الخاص بك ، فاستخدم امر .رمزي*  
+  `
   if (!Reg.test(text)) throw `✳️ استخدم الامر: *${usedPrefix + command} الاسم.العمر*\n📌مثال : *${usedPrefix + command}* ${name2}.16`
   let [_, name, splitter, age] = text.match(Reg)
   if (!name) throw '*ادخل الاسم*'

@@ -56,6 +56,6 @@ await m.reply(`${sn}`)
 handler.help = ['daftar', 'register'].map(v => v + ' <nama>.<umur>')
 handler.tags = ['xp']
 
-handler.command = /^(التفعيل|تحقق|التحقق|reg(ister)?)$/i
+handler.command = /^(تسجيل|تحقق|التحقق|reg(ister)?)$/i
 
 export default handler

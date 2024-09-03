@@ -10,7 +10,7 @@ for (let mem of participants) {
 teks += `*⏎┇ تفاعل  ⏎* @${mem.id.split('@')[0]}\n`}
   
 teks += `*❂ــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــــ*\n\n*⧠━──━⧈⇓《 مــــنـــــشــــــن 》⇓⧈━──━⧠*`
-conn.sendMessage(m.chat, { text: teks, mentions: participants.map(a => a.id) }, )
+conn.sendMessage(m.chat, { text: teks, mentions: participants.map(a => a.id) }, { quoted: fkontak } )
 }
 handler.help = ['tagall <mesaje>','invocar <mesaje>']
 handler.tags = ['group']

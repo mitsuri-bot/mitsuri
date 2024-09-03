@@ -15,13 +15,11 @@ let handler = async (m, {conn, usedPrefix}) => {
 
 *⌘┇الــنــقـــود💰⇠ _${user.money}_ ┇*
 
-*⌘┇مثك⇠ _${user.mythic}_ ┇*
-
-*⌘|لــجـنــدري⇠ _${user.legendary}_ ┇*
+*⌘┇مـــثـــك🎃⇠ _${user.mythic}_ ┇*
 
 *⌘┇الــجــرعــات💊⇠ _${user.potion}_ ┇*
 *❐═━━━═╊⊰🐉⊱╉═━━━═❐*
-`, m, { mentions: [who] })
+`, fkontak , m, { mentions: [who] })
 }
 handler.help = ['balance']
 handler.tags = ['econ']

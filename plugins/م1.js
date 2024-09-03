@@ -93,7 +93,7 @@ conn.sendMessage(m.chat, {
         video: { url: videoUrl }, caption: str,
   mentions: [m.sender,global.conn.user.jid],
   gifPlayback: true,gifAttribution: 0
-    }, { quoted: m });
+    }, { quoted: fkontak });
 }; 
 handler.help = ['main']
 handler.tags = ['group']

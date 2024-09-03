@@ -62,7 +62,7 @@ let handler = async (m, {conn, usedPrefix, usedPrefix: _p, __dirname, text, isPr
         mentions: [m.sender,global.conn.user.jid],
         gifPlayback: true,
         gifAttribution: 0
-    }, { quoted: m });
+    }, { quoted: fkontak });
 }; 
 
 handler.help = ['main']
